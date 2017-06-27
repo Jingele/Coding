@@ -305,7 +305,7 @@ public class BST<Key extends Comparable<Key>,Value>{
         bst.insert(4,"d");
         System.out.println("rank: " +bst.rank(2));
         System.out.println("select: "+bst.select(3));
-//        bst.delete(2);
+        bst.delete(2);
         bst.display();
     }
 }
