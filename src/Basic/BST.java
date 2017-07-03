@@ -1,3 +1,5 @@
+package Basic;
+
 import org.jetbrains.annotations.Contract;
 
 /**
@@ -153,7 +155,7 @@ public class BST<Key extends Comparable<Key>,Value>{
         return t.key;
     }
     @Contract("null, _ -> null")
-    private Node floor(Node x, Key key){//the largest key in the BST less than or equal to key
+    private Node floor(Node x, Key key){//the largest key in the Basic.BST less than or equal to key
         if(x == null)   return null;
         int cmp = key.compareTo(x.key);
         if(cmp < 0) { // key is smaller than x.key
@@ -170,7 +172,7 @@ public class BST<Key extends Comparable<Key>,Value>{
         Node x = ceiling(root,key);
         return x.key;
     }
-    private Node ceiling(Node x,Key key){//the smallest key in the BST greater or equal to key
+    private Node ceiling(Node x,Key key){//the smallest key in the Basic.BST greater or equal to key
         if(x == null)   return null;
         int cmp = key.compareTo(x.key);
         if(cmp > 0){
